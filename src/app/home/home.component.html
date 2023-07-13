@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <h2>
+            Welcome to our Company
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="row">
+        <div *ngFor='let i of users' class="col-lg-4 col-md-4 col-sm-6 userCard">
+            <div class="text-center border p-1 m-1 rounded-3">
+                <img src='{{i.avatar}}' class="border border-secondary rounded-5 img-fluid">
+                <h4>{{i.first_name}} {{i.last_name}}</h4>
+                <h5 class="text-break">{{i.email}}</h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="text-center">
+            <app-chart></app-chart>
+        </div>
+    </div>
+</div>
